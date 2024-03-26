@@ -34,6 +34,48 @@ abline(simpAGE)
 summary.lm(simpAGE)
 ```
 
+```{r}
+simpMONTH <- lm(LENGTH~MONTH,data=bears)
+plot(LENGTH~MONTH,data=bears)
+abline(simpMONTH)
+summary.lm(simpMONTH)
+```
+
+```{r}
+simpHEADLEN <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simpHEADLEN)
+summary.lm(simpHEADLEN)
+```
+
+```{r}
+simpHEADWTH <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simpHEADWTH)
+summary.lm(simpHEADWTH)
+```
+
+```{r}
+simpSEX <- lm(LENGTH~SEX,data=bears)
+plot(LENGTH~SEX,data=bears)
+abline(simpSEX)
+summary.lm(simpSEX)
+```
+
+```{r}
+simpCHEST <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simpCHEST)
+summary.lm(simpCHEST)
+```
+
+```{r}
+simpWEIGHT <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simpWEIGHT)
+summary.lm(simpWEIGHT)
+```
+
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
